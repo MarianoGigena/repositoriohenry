@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=M+PLUS+Code+Latin:wght@100..700&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Mi primer sitio Web</title>
 </head>
@@ -12,7 +19,7 @@
     <header>
         <h1>Titulo Principal</h1>
         <nav>
-            <ul>
+            <ul class="navegacion">
                 <li><a href="">Inicio</a></li>
                 <li><a href="">Productos</a></li>
                 <li><a href="">Nosotros</a></li>
@@ -27,8 +34,15 @@
             <article>
                 <div class="contenedor">
                     <div class="links">
-                        <h2>Nota principal</h2>
-                        <img><a href="">I</a></img>
+                        <h2>Chat GPT</h2>
+                        <a href="https://chat.openai.com/" target="_blank"> <img src="assets/media/chatgpt.jpg"
+                                class="logo"></img></a>
+                    </div>
+
+                    <div class="links">
+                        <h2>Gemini</h2>
+                        <a href="https://gemini.google.com/app" target="_blank"> <img
+                                src="./assets/media/Google-Gemini-IA.webp" class="logo"></img></a>
                     </div>
 
                     <div class="links">
@@ -40,10 +54,12 @@
                         <h2>Nota principal</h2>
                         <img><a href="">I</a></img>
                     </div>
-
-                    <div class="links">
-                        <h2>Nota principal</h2>
-                        <img><a href="">I</a></img>
+                    <div class="articulo">
+                        <h2>Monitor 24´</h2>
+                        <a href=""><img src="./assets/media/unnamed.jpg" class="logo"></img></a>
+                        <p>Monitor Dell</p>
+                        <p>$1000</p>
+                        <button class="boton-emergente">Comprar</button>
                     </div>
                 </div>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique molestias dolorem mollitia,
@@ -51,8 +67,44 @@
                     Necessitatibus, accusamus laboriosam?</p>
             </article>
         </section>
+        <section>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FdZ8LKiJBhQ?si=3aIM5ofoJcG4fND-"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
         <footer>Copyright 2024</footer>
+        <div class="ventana-emergente">
+            <h2>Monitor DELL</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae quas id repudiandae animi tempora velit.
+                Reiciendis laborum, suscipit, minima architecto ipsum nihil consequatur dicta adipisci mollitia culpa
+                corporis officiis itaque.</p>
+            <button class="boton-cerrar">Cerrar</button>
+        </div>
     </main>
+    <script>
+        const botonEmergente = document.querySelector(".boton-emergente");
+        const ventanaEmergente = document.querySelector(".ventana-emergente");
+
+        botonEmergente.addEventListener("click", () => {
+            ventanaEmergente.classList.add("visible");
+        });
+
+
+
+        const botonCerrar = document.querySelector(".boton-cerrar");
+
+        botonEmergente.addEventListener("click", () => {
+            ventanaEmergente.classList.add("visible");
+        });
+
+        botonCerrar.addEventListener("click", () => {
+            ventanaEmergente.classList.remove("visible");
+        });
+
+    </script>
 </body>
 
 </html>

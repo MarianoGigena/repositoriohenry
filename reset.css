@@ -1,0 +1,66 @@
+/* Reset de estilos */
+
+/* Establecer márgenes y rellenos en cero, y utilizar el modelo de caja de borde */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Establecer estilos de fuente predeterminados */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Establecer estilos de lista predeterminados */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Establecer estilos de enlace predeterminados */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Establecer estilos predeterminados para elementos de formulario */
+input,
+textarea,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Eliminar bordes predeterminados de elementos de formulario */
+input,
+textarea,
+button,
+select {
+    border: none;
+    outline: none;
+}
+
+/* Eliminar decoración predeterminada de los botones */
+button {
+    background: none;
+    cursor: pointer;
+}
+
+/* Ajustes adicionales pueden agregarse según sea necesario */
